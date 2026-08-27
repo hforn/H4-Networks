@@ -38,11 +38,23 @@ header {
 }
 
 .brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--text);
   text-decoration: none;
   letter-spacing: 0.02em;
+}
+
+.brand-logo {
+  height: 32px;
+  width: 32px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 6px;
+  padding: 3px;
 }
 
 .nav-links {
@@ -160,12 +172,3 @@ footer a { color: var(--text-dim); }
   margin-top: 2rem;
 }
 
-.todo {
-  background: #2a1f0f;
-  border: 1px solid #5a4420;
-  color: #e8c98a;
-  border-radius: 8px;
-  padding: 0.75rem 1rem;
-  font-size: 0.9rem;
-  margin: 1rem 0;
-}
